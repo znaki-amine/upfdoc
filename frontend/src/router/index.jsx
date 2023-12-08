@@ -6,6 +6,9 @@ import Register from "../pages/Register.jsx";
 import NotFound from "../pages/NotFound.jsx";
 import React from "react";
 import Layout from "../layouts/Layout.jsx";
+import Support from "@/pages/Support.jsx";
+import GetAccount from "@/pages/GetAccount.jsx";
+import AboutUs from "@/pages/AboutUs.jsx";
 
 export const router = createBrowserRouter([
     {
@@ -26,6 +29,18 @@ export const router = createBrowserRouter([
             {
                 path:'/users',
                 element:<Users/>
+            },
+            {
+                path:'/support',
+                element:<Support/>
+            },
+            {
+                path:'/GetAccount',
+                element:<GetAccount/>
+            },
+            {
+                path:'/AboutUs',
+                element:<AboutUs/>
             },
             {
                 path:'*',
